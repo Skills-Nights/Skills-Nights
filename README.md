@@ -3,6 +3,8 @@
 
 ## Table of Contents
 
+#### For contributions, please refer [CONTRIBUTING.md(new)](https://github.com/Skills-Nights/Skills-Nights/blob/main/CONTRIBUTING.md)
+
 1. [Installation](#installation)
 2. [Contributing](#contributing)
 
