@@ -13,9 +13,10 @@ import Aboutus from './components/aboutus';
 function App() {
   return (
     <>
+      <Aboutus />
+      {/* <Main />
       <Navbar />
       <MainThree />
-      {/* <Main />
       <Loader />
       <Event />
       <Projects />
