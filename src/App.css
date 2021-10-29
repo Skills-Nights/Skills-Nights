@@ -1,7 +1,72 @@
+
+.button1{
+  margin-left: 40%;
+  margin-top: 50px;
+  width: 193px;
+  height: 70px;
+  left: 789px;
+  top: 634px;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 50px;
+  }
+  
+  .button2{
+  margin-left: 42%;
+  margin-top: -3.7%;
+  width: 43px;
+  height: 43px;
+  left: 818px;
+  top: 647px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.22);
+  }
+  
+  .button3{
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-left-color:white;
+    margin-left: 43.1%;
+    margin-top: -2.3%;
+  }
+  
+  .intro{
+    color: white;
+    margin-top: -2.5%;
+    margin-left: 46.1%;
+  
+  }
+  
+  
+  .aboutuss{
+    padding-top: 15px;
+    margin-right: 45px;
+    margin-left: 40%;
+    font-size: 22px;
+    color: white;
+    word-spacing: 4px;
+  }
+  
+  .heading{
+    color: white;
+    margin-top: 80px;
+    margin-left: 40%;
+    font-size: 55px;
+    font-weight: bold;
+  }
+  
+  .image{
+    width: 83px;
+    height: 83px;
+    margin-top: 40px;
+    margin-left: 60px;
+  }
+  
 body {
-  background-image: url("../src/components/mainThree/bg.png");
-  color: azure;
+  background-color: black;
 }
+
 /* 
 img {
   width: 500px;
