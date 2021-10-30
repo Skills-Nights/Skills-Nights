@@ -1,0 +1,69 @@
+.App{
+    height:100vh;
+    width: 100vh;
+  
+  }
+  .image{
+    height:100vh;
+    width:212vh;
+  }
+  .para{
+    position: absolute;
+  width: 698px;
+  height: 78px;
+  
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 97px;
+  top:45px;
+  right: 265px;
+  color: #000000;
+  }
+  .is{
+    position: absolute;
+  width: 959px;
+  height: 171px;
+  
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  top:220px;
+  right:1px;
+  color: #000000;
+  
+  }
+  .box{
+    position: absolute;
+    width: 345px;
+    height: 88px;
+    
+  border: 1px solid black;
+  box-sizing: border-box;
+  top:430px;
+  right:612px;
+  }
+  .up{
+    position: absolute;
+  width: 232px;
+  height: 35px;
+  margin-top: 0px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 35px;
+  padding:25px;
+  text-align:center;
+  
+  color: #000000;
+  
+  }
+  .arrow{
+    size:100px;
+  
+  }
+  
