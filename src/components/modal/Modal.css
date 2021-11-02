@@ -82,12 +82,13 @@
 .modal-register-button button{
   background: transparent;
   color: white;
-  width: 140px;
-  min-width: 140px;
+  width: 160px;
+  min-width: 160px;
   height: 50px;
   border: 1px solid white;
   transform: scale(0);
   transition: all 1s ease-out;
+  font-size: 1rem;
 }
 
 .modal-background.pop-up-smooth .modal-register-button button{

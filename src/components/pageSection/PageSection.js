@@ -3,12 +3,12 @@ import "./PageSection.css";
 import Button from "../sectionButton/SectionButton";
 import testVideo from "./assets/testVideo.mp4"
 import Modal from "../modal/Modal";
+// import Archives from "../archives/Archives";
 
 const PageSection = (props) => {
 
-  const {sectionHeading, sectionPara, sectionButtonStyle, sectionButtonName, sectionBg, hasModal} = props
+  const {sectionHeading, sectionPara, sectionButtonStyle, sectionButtonName, sectionBg, hasModal, hasArchives} = props
   const [modalOpen, setModalOpen] = useState(false);
-
 
   const showModal = ()=>{
     setModalOpen(true)
@@ -37,6 +37,13 @@ const PageSection = (props) => {
           <Modal setModalOpen={setModalOpen}></Modal>
         </div>
       )}
+      {
+        hasArchives && (
+          <div>
+            {/* <Archives></Archives> */}
+          </div>
+        )
+      }
     </div>
   );
 };
