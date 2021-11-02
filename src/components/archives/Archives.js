@@ -1,7 +1,7 @@
+import React from 'react'
+import './Archives.css';
 
-import './archivespage2.css';
-
-function ArchivesPage2() {
+const Archives = () => {
   return (
     <div className="App">
       <img src="Group 19.png" className="image" alt=""/>
@@ -37,4 +37,4 @@ function ArchivesPage2() {
   );
 }
 
-export default ArchivesPage2;
+export default Archives;
