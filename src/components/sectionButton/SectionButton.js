@@ -15,10 +15,10 @@ const Button = ({ children, onClick, buttonStyle}) => {
       {children}
       <span>
         {buttonStyle === "btn-white" ? (
-          <img src={arrowBlack} alt="sectionButton" />
+          <img src={arrowGrey} alt="sectionButton" />
         ) : null}
         {
-          buttonStyle === "btn-black" ?  <img src={arrowGrey} alt="sectionButton" /> : null
+          buttonStyle === "btn-black" ?  <img src={arrowBlack} alt="sectionButton" /> : null
         }
         {
           buttonStyle === "btn-intro" ? <Polygon></Polygon> : null

@@ -1,3 +1,7 @@
+.section-view{
+  position: relative;
+}
+
 .section-container {
   display: flex;
   justify-content: flex-end;
