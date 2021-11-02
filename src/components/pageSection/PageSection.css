@@ -1,0 +1,78 @@
+.section-view{
+  position: relative;
+}
+
+.section-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.blackBg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/blackBg.png");
+  color: white;
+}
+
+.whiteBg {
+  background: url("./assets/whiteBg.png");
+  color: black;
+}
+
+.section-content {
+  width: 40%;
+  margin: 0 5rem;
+}
+
+.section-content > div {
+  margin: 2rem 0;
+}
+
+.section-content .heading h1 {
+  font-weight: lighter;
+  font-size: 3rem;
+}
+
+.section-para p {
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 1150px) {
+  .section-content {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .section-container {
+    justify-content: center;
+  }
+  .section-content {
+    width: 80%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-content {
+    width: 80%;
+  }
+  .section-content > div {
+    margin: 1rem 0;
+  }
+  .section-content .heading h1 {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  .section-para p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    letter-spacing: 1px;
+  }
+}
