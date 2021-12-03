@@ -1,0 +1,35 @@
+.dialog{
+    border: solid 1px white;
+    background-image: none;
+    width: 1000px;
+    max-width: 100%;
+    margin: 10px auto;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    background-color: black !important;
+    padding: 50px 20px 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.dialog__title{
+    font-size: 35px;
+}
+.dialog__content,.dialog__title,.dialog_description,.dialog__footer,.dialog__cancel{
+    background-image: none;
+    border: none;
+    background-color: black;
+}
+.dialog_description{
+    margin: 100px;
+}
+.dialog__cancel{
+    border: solid 1px white;
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px 10px;
+}

@@ -1,0 +1,105 @@
+n  n    
+  .cord1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('dummy.png') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 1;  
+    transition: all .5s ease-in;
+  }
+  .cord2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('dummy.png') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 1;  
+    transition: all .5s ease-in;
+  }
+  
+  .lead1::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('dummy.png') no-repeat center center/cover;
+      z-index: -1;
+      opacity: 1;  
+      transition: all .5s ease-in;
+    }
+  
+    .lead2::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('dummy.png') no-repeat center center/cover;
+      z-index: -1;
+      opacity: 1;  
+      transition: all .5s ease-in;
+    }
+  
+    .lead3::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('dummy.png') no-repeat center center/cover;
+      z-index: -1;
+      opacity: 1;  
+      transition: all .5s ease-in;
+    }
+  
+  
+  
+    .lead4::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('dummy.png') no-repeat center center/cover;
+      z-index: -1;
+      opacity: 1;  
+      transition: all .5s ease-in;
+    }
+  
+    .lead5::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('dummy.png') no-repeat center center/cover;
+      z-index: -1;
+      opacity: 1;  
+      transition: all .5s ease-in;
+    }
+    
+    .lead6::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('dummy.png') no-repeat center center/cover;
+      z-index: -1;
+      opacity: 1;  
+      transition: all .5s ease-in;
+    }
