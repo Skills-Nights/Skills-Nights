@@ -1,30 +1,4 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
 import React from 'react'
-// import { render } from 'react-dom'
 import { VideoScroll } from 'react-video-scroll'
  
 const setStyles = (wrapperEl, videoEl, playbackRate) => {
@@ -58,7 +32,4 @@ function App() {
   )
 }
  
-// render(<App />, document.getElementById('root'))
-// type="video/mp4"
 export default App;
-
