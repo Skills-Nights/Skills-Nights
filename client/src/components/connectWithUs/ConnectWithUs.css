@@ -58,9 +58,21 @@
   margin-bottom: 0.5rem;
 }
 
+.container-mask .content .message input{
+  width: 100%;
+  padding: 8px;
+  outline: none;
+  letter-spacing: 1px;
+  background: transparent;
+  height: 2rem;
+  border: 1px solid rgb(158, 151, 151);
+  color: white;
+  font-size: 0.95rem;
+}
+
 .container-mask .content .message textarea {
   width: 100%;
-  padding: 5px;
+  padding: 8px;
   outline: none;
   letter-spacing: 1px;
   height: 100px;
@@ -68,6 +80,7 @@
   background: transparent;
   border: 1px solid rgb(158, 151, 151);
   color: white;
+  font-family: "Roboto", sans-serif;
   font-size: 0.95rem;
 }
 
@@ -82,19 +95,25 @@
   justify-content: center;
   align-items: center;
   flex-direction: row-reverse;
-  width: 80px;
   background: white;
   border: none;
-  padding: 5px 2px;
+  padding: 6px 8px;
   font-size: 1rem;
   cursor: pointer;
   border-radius: 25px;
+  min-width: 81px;
+  min-height: 38px;
 }
 
 .mail-btn span {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.mail-btn.muted{
+  cursor: not-allowed;
+  background: rgb(218, 217, 217);
 }
 
 .mail-btn span img {
