@@ -1,0 +1,121 @@
+.connect-with-us-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.whiteBg {
+  background: url("../pageSection/assets/whiteBg.png");
+  color: black;
+}
+
+.container-mask {
+  position: absolute;
+  min-height: 100vh;
+  background: #000000;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  transform-origin: left;
+  transform: skew(0, -7deg);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.connect-with-us-content {
+  transform: skew(0, 7deg);
+  width: 40%;
+  margin: 0 5rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+
+.connect-with-us-content > div {
+  margin: 2rem 0;
+}
+
+.connect-with-us-content h1 {
+  font-weight: lighter;
+  font-size: 3rem;
+}
+
+.container-mask .content {
+  border: 1px solid rgb(158, 151, 151);
+  padding: 2rem 1rem;
+}
+
+.container-mask .content h3 {
+  margin-bottom: 1rem;
+  font-weight: lighter;
+}
+
+.container-mask .content .message {
+  margin-bottom: 0.5rem;
+}
+
+.container-mask .content .message textarea {
+  width: 100%;
+  padding: 5px;
+  outline: none;
+  letter-spacing: 1px;
+  height: 100px;
+  resize: none;
+  background: transparent;
+  border: 1px solid rgb(158, 151, 151);
+  color: white;
+  font-size: 0.95rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mail-btn {
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 80px;
+  background: white;
+  border: none;
+  padding: 5px 2px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.mail-btn span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail-btn span img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1150px) {
+  .connect-with-us-content {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container-mask {
+    justify-content: center;
+  }
+  .connect-with-us-content {
+    width: 80%;
+    margin: 0;
+  }
+}

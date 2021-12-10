@@ -53,4 +53,20 @@ export default [
     sectionBg: "blackBg",
     hasArchives: true,
   },
+  {
+    id: 4,
+    sectionHeading: "Our Team",
+    sectionPara: (
+      <p>
+        {" "}
+        This guide is designed to give you a better understanding of what a noob
+        is, how to recognize them, some details about them, and how to avoid or
+        get rid of them. It mostly applies to online forums, which are the main
+        targets of migrating noobs.
+      </p>
+    ),
+    sectionButtonName: "Core-Team Members",
+    sectionButtonStyle: "btn-black",
+    sectionBg: "whiteBg",
+  },
 ];
