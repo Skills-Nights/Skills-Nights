@@ -33,6 +33,7 @@
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
+  margin-top: 9rem;
 }
 
 .connect-with-us-content > div {
@@ -136,5 +137,21 @@
   .connect-with-us-content {
     width: 80%;
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-mask {
+    width: 100%;
+  }
+  .connect-with-us-content h1 {
+    font-size: 2rem;
+  }
+  .container-mask{
+     transform: skew(0, -15deg);
+  }
+  .connect-with-us-content{
+     transform: skew(0, 15deg);
+
   }
 }

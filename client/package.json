@@ -2,6 +2,7 @@
   "name": "skills-nights",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@react-three/drei": "^7.12.6",
     "@react-three/fiber": "^7.0.10",
@@ -12,9 +13,14 @@
     "lerp": "^1.0.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-full-screen": "^1.1.0",
     "react-particles-js": "^3.5.3",
+    "react-player": "^2.9.0",
+    "react-router-dom": "^6.0.2",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "4.0.3",
     "react-spinners": "^0.11.0",
+    "super-tiny-icons": "^0.4.0",
     "three": "^0.130.1",
     "tsparticles": "^1.35.4",
     "web-vitals": "^1.1.2"

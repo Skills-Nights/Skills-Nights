@@ -49,7 +49,7 @@ const ConnectWithUs = () => {
   };
 
   return (
-    <div className="connect-with-us-container whiteBg">
+    <div id="connect-with-us" className="connect-with-us-container whiteBg">
       <div className="container-mask">
         <div className="connect-with-us-content">
           <div className="heading">

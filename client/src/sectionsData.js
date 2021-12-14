@@ -1,6 +1,7 @@
 export default [
   {
     id: 1,
+    pageId: "about-us",
     sectionHeading: "About Us",
     sectionPara: (
       <p>
@@ -16,9 +17,11 @@ export default [
     sectionButtonName: "Intro",
     sectionButtonStyle: "btn-intro",
     sectionBg: "blackBg",
+    hasVideo: true
   },
   {
     id: 2,
+    pageId: "events",
     sectionHeading: "Events & Fun Activities",
     sectionPara: (
       <p>
@@ -38,6 +41,7 @@ export default [
   },
   {
     id: 3,
+    pageId: "archives",
     sectionHeading: "Archives",
     sectionPara: (
       <p>
@@ -55,6 +59,7 @@ export default [
   },
   {
     id: 4,
+    pageId: "our-team",
     sectionHeading: "Our Team",
     sectionPara: (
       <p>
@@ -68,5 +73,6 @@ export default [
     sectionButtonName: "Core-Team Members",
     sectionButtonStyle: "btn-black",
     sectionBg: "whiteBg",
+    isTeam: true
   },
 ];
