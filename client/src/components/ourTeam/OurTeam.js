@@ -16,7 +16,7 @@ const OurTeam = () => {
   console.log(heads);
 
   return (
-    <div className="our-team-container">
+    <div id="team" className="our-team-container">
       <div className="our-team-content">
         <div className="team">
           <div className="team-heading">

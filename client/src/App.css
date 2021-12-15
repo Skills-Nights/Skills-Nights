@@ -1,37 +1,20 @@
 .main-container{
     position: relative;
 }
-
+/* 
 .bubbles{
-    position: fixed;
     top: 10rem;
     left: 20rem;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 .bubbles img{
     margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
 }
 
-.bubble-1{
-    transform: scale(1);
-}
-
-.bubble-2{
-    transform: scale(1);
-    display: none;
-}
-
-.bubble-3{
-    transform: scale(0.9);
-    display: none;
-}
-
-.bubble-4{
-    transform: scale(0.7);
-}
-
-.bubble-5{
-    transform: scale(0.5);
-}
+.bubble1 img{
+    margin-left: 20rem;
+} */

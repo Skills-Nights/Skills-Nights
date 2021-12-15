@@ -1,14 +1,14 @@
-import aditiYadavImage from "./assets/aditiYadav.jpg"
-import chetanAmritanshuImage from "./assets/chetanAmritanshu.jpeg"
+import aditiYadavImage from "./assets/aditiYadav.jpg";
+import chetanAmritanshuImage from "./assets/chetanAmritanshu.jpeg";
 import rituBhangaleImage from "./assets/rituBhangale.jpg";
-import avaniBahetiImage from "./assets/avaniBaheti.jpg"
-import devanshuGuptaImage from "./assets/devanshuGupta.jpg"
-import divyanshKumarImage from "./assets/divyanshKumar.jpg"
+import avaniBahetiImage from "./assets/avaniBaheti.jpg";
+import devanshuGuptaImage from "./assets/devanshuGupta.jpg";
+import divyanshKumarImage from "./assets/divyanshKumar.jpg";
 import mohitKothariImage from "./assets/mohitKothari.jpg";
-import mihikaParmarImage from "./assets/mihikaParmar.jpeg"
-import omkarKadamImage from "./assets/omkarKadam.jpg"
-import manasKapoorImage from "./assets/manasKapoor.jpg"
-import piyushAgarwalImage from "./assets/piyushAgarwal.jpg"
+import mihikaParmarImage from "./assets/mihikaParmar.jpeg";
+import omkarKadamImage from "./assets/omkarKadam.jpg";
+import manasKapoorImage from "./assets/manasKapoor.jpg";
+import piyushAgarwalImage from "./assets/piyushAgarwal.jpg";
 import rajatSharmaImage from "./assets/rajatSharma.jpeg";
 import satyamShuklaImage from "./assets/satyamShukla.jpg";
 import umaImage from "./assets/uma.jpg";
@@ -21,6 +21,9 @@ import yashMishraImage from "./assets/yashMishra.jpeg";
 import yogeshSewadaImage from "./assets/yogeshSewada.jpg";
 import nikhilDahriyaImage from "./assets/nikhilDahriya.jpg";
 import exampleImage from "./assets/nikhilDahriya.jpg";
+import ambujRajImage from "./assets/ambujRaj.jpeg";
+import chiragGargImage from "./assets/chiragGarg.jpeg";
+import parasSaxenaImage from "./assets/parasSaxena.jpg";
 
 export default [
   {
@@ -31,7 +34,7 @@ export default [
     instagramLink: "",
     githubLink: "",
     team: "content",
-    email: ""
+    email: "",
   },
   {
     id: 2,
@@ -108,7 +111,7 @@ export default [
   {
     id: 10,
     name: "Ambuj Raj",
-    image: exampleImage,
+    image: ambujRajImage,
     linkedinLink: "",
     instagramLink: "",
     githubLink: "",
@@ -135,7 +138,7 @@ export default [
   {
     id: 13,
     name: "Paras Saxena",
-    image: exampleImage,
+    image: parasSaxenaImage,
     linkedinLink: "",
     instagramLink: "",
     githubLink: "",
@@ -161,6 +164,15 @@ export default [
   },
   {
     id: 16,
+    name: "Divyansh Kumar",
+    image: divyanshKumarImage,
+    linkedinLink: "",
+    instagramLink: "",
+    githubLink: "",
+    team: "management",
+  },
+  {
+    id: 17,
     name: "Mihika Parmar",
     image: mihikaParmarImage,
     linkedinLink: "",
@@ -169,7 +181,7 @@ export default [
     team: "management",
   },
   {
-    id: 17,
+    id: 18,
     name: "Avani Baheti",
     image: avaniBahetiImage,
     linkedinLink: "",
@@ -178,7 +190,7 @@ export default [
     team: "management",
   },
   {
-    id: 18,
+    id: 19,
     name: "Shrishti Shah",
     image: exampleImage,
     linkedinLink: "",
@@ -188,7 +200,7 @@ export default [
   },
 
   {
-    id: 19,
+    id: 20,
     name: "Uma",
     image: umaImage,
     linkedinLink: "",
@@ -196,15 +208,7 @@ export default [
     githubLink: "",
     team: "management",
   },
-  {
-    id: 20,
-    name: "Chirag Garg",
-    image: exampleImage,
-    linkedinLink: "",
-    instagramLink: "",
-    githubLink: "",
-    team: "management",
-  },
+
   {
     id: 21,
     name: "Sahil Kothiwala",
@@ -270,17 +274,17 @@ export default [
   },
   {
     id: 28,
-    name: "Divyansh Kumar",
-    image: divyanshKumarImage,
+    name: "Chirag Garg",
+    image: chiragGargImage,
     linkedinLink: "",
     instagramLink: "",
     githubLink: "",
-    team: "heads",
+    team: "management",
   },
   {
     id: 29,
     name: "Chirag Carg",
-    image: exampleImage,
+    image: chiragGargImage,
     linkedinLink: "",
     instagramLink: "",
     githubLink: "",
@@ -289,7 +293,7 @@ export default [
   {
     id: 30,
     name: "Ambuj Raj",
-    image: exampleImage,
+    image: ambujRajImage,
     linkedinLink: "",
     instagramLink: "",
     githubLink: "",

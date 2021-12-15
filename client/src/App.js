@@ -14,15 +14,15 @@ import sectionsData from "./sectionsData";
 import Archives from "./components/archives/Archives";
 import OurTeam from "./components/ourTeam/OurTeam";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 const App = () => {
-  // const handle = useFullScreenHandle();
+  
+    useEffect(() => {
+      Aos.init({ duration: 1000 });
+    }, []);
 
-  // console.log("handle", handle);
-
-  // const handleClick = () => {
-  //   handle.enter();
-  //   console.log(handle.enter());
-  // };
 
   return (
     <Router>
@@ -44,7 +44,13 @@ const App = () => {
                 })}
                 <ConnectWithUs></ConnectWithUs>
                 {/* <div className="bubbles">
-                  <img className="bubble-1" src={bubble} alt="" />
+                  <div className="bubble1">
+                    <img
+                      data-aos="fade-right"
+                      src={bubble}
+                      alt=""
+                    />
+                  </div>
                   <img className="bubble-2" src={bubble} alt="" />
                   <img className="bubble-3" src={bubble} alt="" />
                   <img className="bubble-4" src={bubble} alt="" />
@@ -53,12 +59,9 @@ const App = () => {
               </div>
             }
           />
-          <Route
-            path="/video"
-            element={<IntroVideo/>}
-          ></Route>
-          <Route path="/team" element={<OurTeam/>} ></Route>
-          <Route path="/archives" element={<Archives/>} ></Route>
+          <Route path="/video" element={<IntroVideo />}></Route>
+          <Route path="/team" element={<OurTeam />}></Route>
+          <Route path="/archives" element={<Archives />}></Route>
         </Routes>
       </div>
     </Router>

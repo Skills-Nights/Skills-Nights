@@ -24,6 +24,7 @@
 .section-content {
   width: 40%;
   margin: 0 5rem;
+  z-index: 10;
 }
 
 .section-content > div {
@@ -41,6 +42,29 @@
   letter-spacing: 1px;
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
+}
+
+/* 
+sn heading
+*/
+
+.sn-heading{
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+  width: 60%;
+}
+
+.sn-heading h1{
+  text-align: center;
+  font-size: 6rem;
+  letter-spacing: 5px;
+  line-height: 7rem;
+  font-family: "Roboto", sans-serif;
 }
 
 @media screen and (max-width: 1150px) {

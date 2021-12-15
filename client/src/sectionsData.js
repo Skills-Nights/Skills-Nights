@@ -1,3 +1,29 @@
+const sizeArray = ["200px", "130px", "300px", "150px", "180px"];
+// const marginLeftArray = ["1rem", "5rem", "10rem", "15rem", "20rem"];
+// const marginTopArray = ["1rem", "5rem", "10rem", "15rem", "20rem"];
+const animationArray = [
+  "fade-up",
+  "fade-in",
+  "fade-right",
+  "fade-left",
+  "fade-up-right",
+  "fade-down-right",
+  "flip-left",
+  "flip-right",
+  "slide-up",
+  "slide-down",
+  "slide-left",
+  "slide-right",
+  "zoom-in",
+  "zoom-in-up",
+  "zoom-in-left",
+  "zoom-in-right",
+  "zoom-out",
+  "zoom-out-up",
+  "zoom-out-left",
+  "zoom-out-right"
+];
+
 export default [
   {
     id: 1,
@@ -17,7 +43,15 @@ export default [
     sectionButtonName: "Intro",
     sectionButtonStyle: "btn-intro",
     sectionBg: "blackBg",
-    hasVideo: true
+    hasVideo: true,
+    isAbout: true,
+    bubblesData: [
+      {
+        size: "200px",
+        marginLeft: "20rem",
+        marginTop: "30rem",
+      },
+    ],
   },
   {
     id: 2,
@@ -38,6 +72,19 @@ export default [
     sectionButtonStyle: "btn-black",
     sectionBg: "whiteBg",
     hasModal: true,
+    bubblesData: [
+      {
+        size: "150px",
+        marginLeft: "35rem",
+        marginTop: "10rem",
+      },
+      {
+        size: "130px",
+        marginLeft: "10rem",
+        marginTop: "2rem",
+        animation: "fade-left",
+      },
+    ],
   },
   {
     id: 3,
@@ -56,6 +103,23 @@ export default [
     sectionButtonStyle: "btn-white",
     sectionBg: "blackBg",
     hasArchives: true,
+    bubblesData: [
+      {
+        size: "110px",
+        marginLeft: "20rem",
+        marginTop: "8rem",
+      },
+      {
+        size: "150px",
+        marginLeft: "35rem",
+        marginTop: "10rem",
+      },
+      {
+        size: "200px",
+        marginLeft: "10rem",
+        marginTop: "7rem",
+      },
+    ],
   },
   {
     id: 4,
@@ -73,6 +137,24 @@ export default [
     sectionButtonName: "Core-Team Members",
     sectionButtonStyle: "btn-black",
     sectionBg: "whiteBg",
-    isTeam: true
+    isTeam: true,
+    bubblesData: [
+      {
+        size: "110px",
+        marginLeft: "20rem",
+        marginTop: "8rem",
+      },
+      {
+        size: "150px",
+        marginLeft: "35rem",
+        marginTop: "10rem",
+      },
+      {
+        size: "130px",
+        marginLeft: "10rem",
+        marginTop: "2rem",
+        animation: "fade-left",
+      },
+    ],
   },
 ];
