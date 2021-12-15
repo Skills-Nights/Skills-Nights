@@ -10,7 +10,7 @@ const Archives = () => {
   const [recentVideos, setRecentVideos] = useState([]);
   const [webinarVideos, setWebinarVideos] = useState([]);
 
-  const API_KEY = "AIzaSyDc19ABcrwkCYJ1Yn2hxesVN7ArqMYWP74";
+  const API_KEY = "";
   const channelId = "UCzCSePZZ1IqwvSplOF4K1fQ";
   const playlistId = "PL0rYQ5Uu_kMsJttU8o4aB8vn-B2cM_Ct4";
 
