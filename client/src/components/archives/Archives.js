@@ -10,7 +10,7 @@ const Archives = () => {
   const [recentVideos, setRecentVideos] = useState([]);
   const [webinarVideos, setWebinarVideos] = useState([]);
 
-  const API_KEY = "AIzaSyDc19ABcrwkCYJ1Yn2hxesVN7ArqMYWP74";
+  const API_KEY = process.env.REACT_APP_YOUTUBE_APIKEY;
   const channelId = "UCzCSePZZ1IqwvSplOF4K1fQ";
   const playlistId = "PL0rYQ5Uu_kMsJttU8o4aB8vn-B2cM_Ct4";
 
@@ -21,8 +21,38 @@ const Archives = () => {
     try {
       const res = await fetch(recent_videos_url);
       const data = await res.json();
-      setRecentVideos(data.items);
-      setRecentsAreLoading(false);
+      if (data.items) {
+        setRecentVideos(data.items);
+        setRecentsAreLoading(false);
+      } else {
+        // in case quota ended, show old data
+        const oldData = {
+          items: [
+            {
+              id: {
+                videoId: "ldQASZ3Oj58",
+              },
+            },
+            {
+              id: {
+                videoId: "VfvNLbclyJc",
+              },
+            },
+            {
+              id: {
+                videoId: "gIZgYH3bgtA",
+              },
+            },
+            {
+              id: {
+                videoId: "OhBDWfWZQFg",
+              },
+            },
+          ],
+        };
+        setRecentVideos(oldData.items);
+        setRecentsAreLoading(false);
+      }
     } catch (error) {
       setRecentsAreLoading(false);
       console.log(error);
@@ -32,12 +62,43 @@ const Archives = () => {
   const fetchWebinars = async () => {
     try {
       const res = await fetch(webinars_url);
-      const data = await res.json();
-      setWebinarVideos(data.items);
-      console.log(data.items)
-      setWebinarsAreLoading(false);
+      let data = await res.json();
+      console.log(data)
+      if (data.items) {
+        setWebinarVideos(data.items);
+        setWebinarsAreLoading(false);
+      } else {
+        // in case quota ended, show old data
+        const oldData = {
+          items: [
+            {
+              contentDetails: {
+                videoId: "mthkYf9IiNM",
+              },
+            },
+            {
+              contentDetails: {
+                videoId: "GvQYTkBxf-A",
+              },
+            },
+            {
+              contentDetails: {
+                videoId: "4jp_Zin9EZY",
+              },
+            },
+            {
+              contentDetails: {
+                videoId: "jC3yoj3VqmM",
+              },
+            },
+          ],
+        };
+
+        setWebinarVideos(oldData.items);
+        setWebinarsAreLoading(false);
+      }
     } catch (error) {
-      setWebinarVideos(false);
+      setWebinarsAreLoading(false);
       console.log(error);
     }
   };
@@ -50,13 +111,13 @@ const Archives = () => {
   const props = useSpring({
     config: { duration: 1500 },
     val1: 2,
-    val2: 14,
-    val3: 18,
+    val2: 10,
+    val3: 6,
     from: { val1: 0, val2: 0, val3: 0 },
   });
 
   return (
-    <div className="archives-container">
+    <div id="archives" className="archives-container">
       <div className="archives-content">
         <div className="archive-counts">
           <h1>
@@ -82,17 +143,21 @@ const Archives = () => {
           <div className="heading">
             <h1>Recent Events</h1>
           </div>
-          <div className="videos">
-            {recentVideos.map((video, index) => {
-              return (
-                <ReactPlayer
-                  height="300px"
-                  width="350px"
-                  key={index}
-                  url={`https://www.youtube.com/watch?v=${video.id.videoId}`}
-                />
-              );
-            })}
+          <div data-aos="fade-up" className="videos">
+            {recentsAreLoading ? (
+              <PacmanLoader color="white"></PacmanLoader>
+            ) : (
+              recentVideos.map((video, index) => {
+                return (
+                  <ReactPlayer
+                    height="300px"
+                    width="350px"
+                    key={index}
+                    url={`https://www.youtube.com/watch?v=${video.id.videoId}`}
+                  />
+                );
+              })
+            )}
           </div>
           <div className="more-videos">
             <a
@@ -107,17 +172,21 @@ const Archives = () => {
           <div className="heading">
             <h1>Recent Webinars</h1>
           </div>
-          <div className="videos">
-            {webinarVideos.map((video, index) => {
-              return (
-                <ReactPlayer
-                  height="300px"
-                  width="350px"
-                  key={index}
-                  url={`https://www.youtube.com/watch?v=${video.contentDetails.videoId}`}
-                />
-              );
-            })}
+          <div data-aos="fade-down" className="videos">
+            {webinarsAreLoading ? (
+              <PacmanLoader color="white"></PacmanLoader>
+            ) : (
+              webinarVideos.map((video, index) => {
+                return (
+                  <ReactPlayer
+                    height="300px"
+                    width="350px"
+                    key={index}
+                    url={`https://www.youtube.com/watch?v=${video.contentDetails.videoId}`}
+                  />
+                );
+              })
+            )}
           </div>
           <div className="more-videos">
             <a
