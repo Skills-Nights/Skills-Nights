@@ -75,6 +75,11 @@ export default [
         marginLeft: "10rem",
         marginTop: "2rem",
       },
+      {
+        size: "100px",
+        marginLeft: "30rem",
+        marginTop: "5rem",
+      },
     ],
     contentAnim: "fade-up",
   },

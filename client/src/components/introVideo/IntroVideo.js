@@ -23,7 +23,7 @@ const IntroVideo = (props) => {
         controls={true}
         color="blue"
         width="85%"
-        height="90%"
+        height="89%"
         onEnded={goBack}
         config={{
           youtube: {

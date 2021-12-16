@@ -125,20 +125,24 @@ const ConnectWithUs = () => {
       </div>
       <div className="social-media-links">
         <div className="social-media-link">
-          <a href="">
+          <a href="https://www.youtube.com/channel/UCzCSePZZ1IqwvSplOF4K1fQ">
             <YoutubeLogo></YoutubeLogo>
           </a>
         </div>
         <div className="social-media-link">
-          <a href="">
+          <a href="https://www.linkedin.com/in/skills-nights/">
             <LinkedinLogo></LinkedinLogo>
           </a>
         </div>
         <div className="social-media-link">
-          <TelegramLogo></TelegramLogo>
+          <a href="https://t.me/+000RhiRN8LhlMmZl">
+            <TelegramLogo></TelegramLogo>
+          </a>
         </div>
         <div className="social-media-link">
-          <InstagramLogo></InstagramLogo>
+          <a href="https://www.instagram.com/skills_nights_iiitn/">
+            <InstagramLogo></InstagramLogo>
+          </a>
         </div>
       </div>
     </div>

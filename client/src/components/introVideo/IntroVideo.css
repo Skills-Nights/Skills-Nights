@@ -1,11 +1,15 @@
 .video-player-container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     width: 100%;
     height: 100vh;
     background: black;
     overflow: hidden;
+}
+
+.video-player-container > div{
+    margin-bottom: 1rem;
 }
 
 .video-player-container iframe{
