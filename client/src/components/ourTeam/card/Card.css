@@ -1,0 +1,105 @@
+.member-card-container {
+  height: 320px;
+  width: 290px;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  background: white;
+  border-radius: 5px;
+}
+
+.member-card-container .card-content {
+  transition: all 0.5s ease;
+  transform: translate(0, 10%);
+}
+
+a {
+  text-decoration: none;
+}
+
+.member-card-container .card-content img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  margin-bottom: 1rem;
+}
+
+.member-card-container.hovering .card-content img {
+  border-radius: 50%;
+  border: 3px solid white;
+  transform: scale(1.2);
+}
+
+.member-card-container.hovering .card-content {
+  transform: translate(0, -8%);
+}
+
+.member-card-container .card-content h1{
+  font-size: 1.5rem;
+  transition: all 0.5s ease;
+}
+
+.member-card-container.hovering .card-content h1{
+  transform: translate(0, 1rem) scale(1.1);
+}
+
+.member-card-container .card-social-links svg {
+  height: 30px;
+  width: 30px;
+  margin: 0 10px;
+  border-radius: 5px;
+  transition: all 0.2s ease-out;
+}
+
+.member-card-container .card-social-links svg rect {
+  fill: black;
+}
+
+.member-card-container .card-social-links svg path{
+  fill: white;
+  stroke: white;
+}
+
+a linearGradient,
+a radialGradient {
+  display: none;
+}
+
+.member-card-container .card-links {
+  min-height: 50px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+}
+
+.member-card-container.hovering .card-links {
+  min-height: 80px;
+}
+
+.member-card-container .card-social-links {
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s ease;
+  position: absolute;
+  bottom: 0;
+  transform: translate(0%, 120%);
+}
+
+.member-card-container.hovering .card-social-links {
+  transform: translate(0%, -90%);
+}
+
+@media screen and (max-width:600px) {
+ .member-card-container.hovering{
+   margin: 3rem;
+ }
+}

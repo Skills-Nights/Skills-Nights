@@ -1,0 +1,9 @@
+.app{
+    -webkit-tap-highlight-color: transparent;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.main-container{
+    position: relative;
+}

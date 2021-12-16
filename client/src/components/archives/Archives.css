@@ -1,0 +1,120 @@
+.archives-container {
+  font-family: "Roboto", sans-serif;
+  background: violet;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../pageSection/assets/blackBg.png");
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.archives-container .archives-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  margin-top: 3rem;
+}
+
+.archive-counts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #c1c1c1;
+  width: 900px;
+  margin-bottom: 3rem;
+}
+
+.archive-counts span {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.archive-counts h1 {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  font-size: 6rem;
+}
+
+.recent-events,
+.recent-webinars {
+  margin: 2rem;
+}
+
+.videos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 300px;
+}
+
+.videos > div {
+  margin: 0.8rem;
+  border: 1px solid white;
+}
+
+.archives-container .heading {
+  margin-bottom: 1rem;
+}
+
+.archives-container .heading h1 {
+  font-family: "Work Sans";
+  margin-left: 1rem;
+}
+
+.more-videos {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.more-videos a {
+  text-decoration: none;
+  color: #c1c1c1;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+.more-videos a:hover {
+  color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .archives-container .heading h1 {
+    text-align: center;
+    margin-left: 0;
+  }
+  .more-videos {
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .archive-counts {
+    width: 100%;
+  }
+
+  .archive-counts span {
+    font-size: 2rem;
+  }
+
+  .archive-counts h1 {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .archive-counts {
+    flex-direction: column;
+  }
+
+  .archive-counts > div {
+    margin-bottom: 1rem;
+  }
+}

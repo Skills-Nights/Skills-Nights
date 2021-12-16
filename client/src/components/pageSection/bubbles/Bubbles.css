@@ -1,0 +1,8 @@
+.bubbles{
+    position: absolute;
+    top: 2rem;
+    width: 50%;
+    left: 2rem;
+    height: 90vh;
+    color: red;
+}
