@@ -16,14 +16,14 @@ const IntroVideo = (props) => {
   }
 
   return (
-    <div class="video-player-container">
+    <div data-aos="zoom-out" class="video-player-container">
       {/* <FullScreen handle={playerHandle}> */}
       <ReactPlayer
         url="https://www.youtube.com/watch?v=z4VfLxW1ifI"
         controls={true}
         color="blue"
-        width="80%"
-        height="80%"
+        width="85%"
+        height="90%"
         onEnded={goBack}
         config={{
           youtube: {

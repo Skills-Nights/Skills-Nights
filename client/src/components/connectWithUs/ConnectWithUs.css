@@ -34,10 +34,15 @@
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
   margin-top: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .connect-with-us-content > div {
   margin: 2rem 0;
+  width: 90%;
 }
 
 .connect-with-us-content h1 {
@@ -48,6 +53,7 @@
 .container-mask .content {
   border: 1px solid rgb(158, 151, 151);
   padding: 2rem 1rem;
+  min-height: 310px;
 }
 
 .container-mask .content h3 {
@@ -56,19 +62,24 @@
 }
 
 .container-mask .content .message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-bottom: 0.5rem;
+  border: 1px solid rgb(158, 151, 151);
 }
 
-.container-mask .content .message input{
+.container-mask .content .message input {
   width: 100%;
   padding: 8px;
   outline: none;
   letter-spacing: 1px;
   background: transparent;
   height: 2rem;
-  border: 1px solid rgb(158, 151, 151);
   color: white;
   font-size: 0.95rem;
+  border: 1px solid rgb(158, 151, 151);
 }
 
 .container-mask .content .message textarea {
@@ -79,10 +90,10 @@
   height: 100px;
   resize: none;
   background: transparent;
-  border: 1px solid rgb(158, 151, 151);
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 0.95rem;
+  border: 1px solid rgb(158, 151, 151);
 }
 
 .btn-container {
@@ -112,7 +123,7 @@
   align-items: center;
 }
 
-.mail-btn.muted{
+.mail-btn.muted {
   cursor: not-allowed;
   background: rgb(218, 217, 217);
 }
@@ -124,13 +135,58 @@
   border-radius: 50%;
 }
 
+.container-mask .media {
+  color: whitesmoke;
+  transform: skew(0, 7deg) translate(0, 2rem);
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.social-media-links {
+  position: absolute;
+  bottom: 1rem;
+  display: flex;
+}
+
+.social-media-link {
+  width: 40px;
+  height: 40px;
+  margin: 1rem;
+}
+
+.social-media-link:nth-child(1) > a:nth-child(1) > svg:nth-child(1) {
+  fill: black;
+}
+
+.social-media-link:nth-child(2)
+  > a:nth-child(1)
+  > svg:nth-child(1)
+  > rect:nth-child(1) {
+  fill: black;
+}
+
+.social-media-link:nth-child(3) > svg:nth-child(1) > rect:nth-child(1) {
+  fill: black;
+}
+
+.social-media-link #a {
+  display: none;
+}
+
+.social-media-link #c {
+  display: none;
+}
+
 @media screen and (max-width: 1150px) {
   .connect-with-us-content {
     width: 60%;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .container-mask {
     justify-content: center;
   }
@@ -138,20 +194,44 @@
     width: 80%;
     margin: 0;
   }
+  .connect-with-us-content h1 {
+    font-size: 2.7rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .container-mask {
     width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-mask .media {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+  .container-mask .media svg {
+    max-height: 200px;
   }
   .connect-with-us-content h1 {
     font-size: 2rem;
   }
-  .container-mask{
-     transform: skew(0, -15deg);
+  .connect-with-us-content > div{
+    margin: 1rem 0;
   }
-  .connect-with-us-content{
-     transform: skew(0, 15deg);
-
+  .container-mask {
+    transform: skew(0, -15deg);
+  }
+  .connect-with-us-content {
+    transform: skew(0, 15deg);
+  }
+  .social-media-links {
+    bottom: 0.5rem;
+    right: 0.5rem;
+  }
+  .social-media-link {
+    width: 30px;
+    height: 30px;
+    margin: 0.5rem;
   }
 }

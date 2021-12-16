@@ -13,8 +13,6 @@ const Bubbles = (props) => {
     "fade-left",
     "fade-up-right",
     "fade-down-right",
-    "flip-left",
-    "flip-right",
     "slide-up",
     "slide-down",
     "slide-left",
@@ -29,13 +27,10 @@ const Bubbles = (props) => {
     "zoom-out-right",
   ];
 
-  console.log(bubblesData);
-
   return (
     <div className="bubbles">
       {bubblesData.map((bubble, index) => {
         return (
-          <>
             <div key={index} className="bubble">
               <img
                 style={{
@@ -52,7 +47,6 @@ const Bubbles = (props) => {
                 alt=""
               />
             </div>
-          </>
         );
       })}
     </div>

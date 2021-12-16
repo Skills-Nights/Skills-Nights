@@ -18,7 +18,7 @@ const OurTeam = () => {
   return (
     <div id="team" className="our-team-container">
       <div className="our-team-content">
-        <div className="team">
+        <div data-aos="fade-up" className="team">
           <div className="team-heading">
             <h1>Heads</h1>
           </div>
@@ -28,7 +28,7 @@ const OurTeam = () => {
             })}
           </div>
         </div>
-        <div className="team">
+        <div data-aos="fade-down" className="team">
           <div className="team-heading">
             <h1>Developers</h1>
           </div>
@@ -38,7 +38,7 @@ const OurTeam = () => {
             })}
           </div>
         </div>
-        <div className="team">
+        <div data-aos="zoom-out" className="team">
           <div className="team-heading">
             <h1>Designers</h1>
           </div>
@@ -48,7 +48,7 @@ const OurTeam = () => {
             })}
           </div>
         </div>
-        <div className="team">
+        <div data-aos="zoom-in" className="team">
           <div className="team-heading">
             <h1>Content Writers</h1>
           </div>
@@ -58,7 +58,7 @@ const OurTeam = () => {
             })}
           </div>
         </div>
-        <div className="team">
+        <div data-aos="fade-up" className="team">
           <div className="team-heading">
             <h1>Management</h1>
           </div>
@@ -68,7 +68,7 @@ const OurTeam = () => {
             })}
           </div>
         </div>
-        <div className="team">
+        <div data-aos="fade-down" className="team">
           <div className="team-heading">
             <h1>Editors</h1>
           </div>

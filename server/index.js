@@ -24,10 +24,9 @@ app.post("/send", async (req, res) => {
   const output = `<h1>New Message</h1>
   <p>Sent by ${req.body.email}</p>
   <hr/>
-  <p style="color:red" > The message is as follows :</p>
-  <b><i>${req.body.message}</i></b>
+  <p> The message is as follows :</p>
+  <b>${req.body.message}</b>
   <br/>
-  <img src="https://media-exp1.licdn.com/dms/image/C560BAQH83fMHe4Nu0A/company-logo_200_200/0/1612842554550?e=2159024400&v=beta&t=BTzKjhsE18y-YbKdxwvBTFCNFArVt-Casa8F5fqXUbw" alt="sn logo" />
   `;
 
   try {

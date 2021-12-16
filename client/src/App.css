@@ -1,20 +1,7 @@
+.app{
+    -webkit-tap-highlight-color: transparent;
+}
+
 .main-container{
     position: relative;
 }
-/* 
-.bubbles{
-    top: 10rem;
-    left: 20rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.bubbles img{
-    margin-bottom: 10px;
-    width: 100px;
-    height: 100px;
-}
-
-.bubble1 img{
-    margin-left: 20rem;
-} */

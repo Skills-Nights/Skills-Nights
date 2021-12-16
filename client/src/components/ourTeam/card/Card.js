@@ -8,7 +8,7 @@ import { ReactComponent as EmailLogo } from "super-tiny-icons/images/svg/email.s
 const Card = (props) => {
 
     const [isHovering, setIsHovering] = useState(false)
-    const {name, image, linkedinLink, InstagramLink , GithubLink, email} = props
+    const {name, image, linkedinLink, instagramLink , githubLink, email} = props
 
     return (
       <div
@@ -30,16 +30,16 @@ const Card = (props) => {
         </div>
         <div className="card-links">
           <div className="card-social-links">
-            <a href="">
+            <a target="_blank" href={linkedinLink}>
               <LinkedinLogo></LinkedinLogo>
             </a>
-            <a href="">
+            <a target="_blank" href={instagramLink}>
               <InstagramLogo></InstagramLogo>
             </a>
-            <a href="">
+            <a target="_blank" href={githubLink}>
               <GithubLogo></GithubLogo>
             </a>
-            <a href={`mailto:${email}`}>
+            <a target="_blank" href={`mailto:${email}`}>
               <EmailLogo></EmailLogo>
             </a>
           </div>

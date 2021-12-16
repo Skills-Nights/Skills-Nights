@@ -21,7 +21,7 @@ const animationArray = [
   "zoom-out",
   "zoom-out-up",
   "zoom-out-left",
-  "zoom-out-right"
+  "zoom-out-right",
 ];
 
 export default [
@@ -45,13 +45,8 @@ export default [
     sectionBg: "blackBg",
     hasVideo: true,
     isAbout: true,
-    bubblesData: [
-      {
-        size: "200px",
-        marginLeft: "20rem",
-        marginTop: "30rem",
-      },
-    ],
+    bubblesData: [],
+    contentAnim: "fade-up",
   },
   {
     id: 2,
@@ -60,12 +55,9 @@ export default [
     sectionPara: (
       <p>
         {" "}
-        Skills Nights is an ambitious student club that primarily aims at
-        providing a beginner-friendly platform, making it an ideal starting
-        point for the freshers to join and begin their journey of learning or
-        exploring new technologies in their field of interest, building
-        projects, and collaborating with their fellow batchmates to make awesome
-        projects that help them stand out.
+        Skills Nights strongly believes in pi-shaped learning, and one of the
+        best ways is through organising engaging events and informative hands-on
+        workshops. Have a look at what all comes your way next.
       </p>
     ),
     sectionButtonName: "Upcoming Events",
@@ -82,9 +74,9 @@ export default [
         size: "130px",
         marginLeft: "10rem",
         marginTop: "2rem",
-        animation: "fade-left",
       },
     ],
+    contentAnim: "fade-up",
   },
   {
     id: 3,
@@ -93,16 +85,15 @@ export default [
     sectionPara: (
       <p>
         {" "}
-        This guide is designed to give you a better understanding of what a noob
-        is, how to recognize them, some details about them, and how to avoid or
-        get rid of them. It mostly applies to online forums, which are the main
-        targets of migrating noobs.
+        History has a lot to say about our club. We organize monthly mentor
+        programs, skills development sessions by industry experts, flagship
+        events. Check out our past events and interviews.
       </p>
     ),
     sectionButtonName: "Our Past",
     sectionButtonStyle: "btn-white",
     sectionBg: "blackBg",
-    hasArchives: true,
+    isArchives: true,
     bubblesData: [
       {
         size: "110px",
@@ -117,9 +108,10 @@ export default [
       {
         size: "200px",
         marginLeft: "10rem",
-        marginTop: "7rem",
+        marginTop: "3rem",
       },
     ],
+    contentAnim: "fade-up",
   },
   {
     id: 4,
@@ -128,10 +120,10 @@ export default [
     sectionPara: (
       <p>
         {" "}
-        This guide is designed to give you a better understanding of what a noob
-        is, how to recognize them, some details about them, and how to avoid or
-        get rid of them. It mostly applies to online forums, which are the main
-        targets of migrating noobs.
+        We are a team of thinkers, developers, explorers and what not. We
+        approach work and play with curiosity and experimentation, using out
+        experiences and knowledge to provide guidance to newbies who are taking
+        on their journey to the industrial world.
       </p>
     ),
     sectionButtonName: "Core-Team Members",
@@ -153,8 +145,8 @@ export default [
         size: "130px",
         marginLeft: "10rem",
         marginTop: "2rem",
-        animation: "fade-left",
       },
     ],
+    contentAnim: "fade-up",
   },
 ];
