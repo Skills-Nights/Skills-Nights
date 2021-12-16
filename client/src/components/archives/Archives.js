@@ -124,26 +124,26 @@ const Archives = () => {
             <animated.div>
               {props.val1.interpolate((val1) => Math.floor(val1))}
             </animated.div>
-            <br /> <span>Events</span>{" "}
+            <span>Events</span>{" "}
           </h1>
           <h1>
             <animated.div>
               {props.val2.interpolate((val2) => Math.floor(val2))}
             </animated.div>{" "}
-            <br /> <span>Mentors</span>{" "}
+            <span>Mentors</span>{" "}
           </h1>
           <h1>
             <animated.div>
               {props.val3.interpolate((val3) => Math.floor(val3))}
             </animated.div>
-            <br /> <span>Webinars</span>{" "}
+            <span>Webinars</span>{" "}
           </h1>
         </div>
         <div className="recent-events">
           <div className="heading">
             <h1>Recent Events</h1>
           </div>
-          <div data-aos="fade-up" className="videos">
+          <div data-aos="zoom-out" className="videos">
             {recentsAreLoading ? (
               <PacmanLoader color="white"></PacmanLoader>
             ) : (
@@ -151,7 +151,7 @@ const Archives = () => {
                 return (
                   <ReactPlayer
                     height="300px"
-                    width="350px"
+                    width="315px"
                     key={index}
                     url={`https://www.youtube.com/watch?v=${video.id.videoId}`}
                   />
@@ -180,7 +180,7 @@ const Archives = () => {
                 return (
                   <ReactPlayer
                     height="300px"
-                    width="350px"
+                    width="315px"
                     key={index}
                     url={`https://www.youtube.com/watch?v=${video.contentDetails.videoId}`}
                   />

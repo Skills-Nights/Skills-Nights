@@ -1,6 +1,5 @@
 .member-card-container {
   height: 320px;
-  /* min-width: 280px; */
   width: 290px;
   padding: 2rem 1rem;
   display: flex;
@@ -97,4 +96,10 @@ a radialGradient {
 
 .member-card-container.hovering .card-social-links {
   transform: translate(0%, -90%);
+}
+
+@media screen and (max-width:600px) {
+ .member-card-container.hovering{
+   margin: 3rem;
+ }
 }

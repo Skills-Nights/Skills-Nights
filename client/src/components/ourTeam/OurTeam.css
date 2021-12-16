@@ -6,6 +6,8 @@
     padding: 2rem;
     min-height: 100vh;
     background: black;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .our-team-content{

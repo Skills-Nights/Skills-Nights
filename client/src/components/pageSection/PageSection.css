@@ -35,11 +35,11 @@
 
 .section-content .heading h1 {
   font-weight: lighter;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .section-para p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 2.3rem;
   letter-spacing: 1px;
   font-family: "Roboto", sans-serif;
@@ -63,7 +63,7 @@ sn heading
 
 .sn-heading h1 {
   text-align: center;
-  font-size: 6rem;
+  font-size: 5.5rem;
   letter-spacing: 5px;
   line-height: 7rem;
   font-family: "Roboto", sans-serif;
@@ -118,7 +118,7 @@ sn heading
 }
 
 .mask-bubble img {
-  width: 110px;
+  width: 100px;
 }
 
 .mask-bubble {

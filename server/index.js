@@ -9,11 +9,7 @@ app.use(express.json());
 dotenv.config({});
 
 // cors
-app.use(
-  cors({
-    origin: "http://localhost:3000",
-  })
-);
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("Hello");

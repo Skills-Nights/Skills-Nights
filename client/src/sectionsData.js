@@ -67,18 +67,18 @@ export default [
     bubblesData: [
       {
         size: "150px",
-        marginLeft: "35rem",
-        marginTop: "10rem",
+        marginLeft: "30rem",
+        marginTop: "7rem",
       },
       {
         size: "130px",
-        marginLeft: "10rem",
-        marginTop: "2rem",
+        marginLeft: "12rem",
+        marginTop: "12rem",
       },
       {
         size: "100px",
-        marginLeft: "30rem",
-        marginTop: "5rem",
+        marginLeft: "35rem",
+        marginTop: "0rem",
       },
     ],
     contentAnim: "fade-up",
@@ -111,9 +111,9 @@ export default [
         marginTop: "10rem",
       },
       {
-        size: "200px",
+        size: "180px",
         marginLeft: "10rem",
-        marginTop: "3rem",
+        marginTop: "0rem",
       },
     ],
     contentAnim: "fade-up",

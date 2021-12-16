@@ -35,7 +35,7 @@ const ConnectWithUs = () => {
           message: msg,
           email: email,
         },
-        url: "http://localhost:5000/send",
+        url: "https://skills-nights.herokuapp.com/send",
       })
         .then((response) => {
           console.log(response);
@@ -55,7 +55,11 @@ const ConnectWithUs = () => {
   };
 
   return (
-    <div data-aos="fade-down" className="connect-with-us-container whiteBg">
+    <div
+      id="connect-with-us"
+      data-aos="fade-down"
+      className="connect-with-us-container whiteBg"
+    >
       <div className="container-mask">
         <div className="media">
           <ConnectSvg></ConnectSvg>
@@ -64,7 +68,7 @@ const ConnectWithUs = () => {
           <div className="heading">
             <h1>Connect with us !</h1>
           </div>
-          <div id="connect-with-us" className="content">
+          <div className="content">
             <h3>Message for collaboration</h3>
             <form onSubmit={handleSubmit}>
               <div className="message">
@@ -125,22 +129,28 @@ const ConnectWithUs = () => {
       </div>
       <div className="social-media-links">
         <div className="social-media-link">
-          <a href="https://www.youtube.com/channel/UCzCSePZZ1IqwvSplOF4K1fQ">
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCzCSePZZ1IqwvSplOF4K1fQ"
+          >
             <YoutubeLogo></YoutubeLogo>
           </a>
         </div>
         <div className="social-media-link">
-          <a href="https://www.linkedin.com/in/skills-nights/">
+          <a target="_blank" href="https://www.linkedin.com/in/skills-nights/">
             <LinkedinLogo></LinkedinLogo>
           </a>
         </div>
         <div className="social-media-link">
-          <a href="https://t.me/+000RhiRN8LhlMmZl">
+          <a target="_blank" href="https://t.me/+000RhiRN8LhlMmZl">
             <TelegramLogo></TelegramLogo>
           </a>
         </div>
         <div className="social-media-link">
-          <a href="https://www.instagram.com/skills_nights_iiitn/">
+          <a
+            target="_blank"
+            href="https://www.instagram.com/skills_nights_iiitn/"
+          >
             <InstagramLogo></InstagramLogo>
           </a>
         </div>

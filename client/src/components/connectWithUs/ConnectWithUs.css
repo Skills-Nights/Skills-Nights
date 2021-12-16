@@ -47,7 +47,7 @@
 
 .connect-with-us-content h1 {
   font-weight: lighter;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .container-mask .content {
@@ -59,7 +59,7 @@
 .container-mask .content h3 {
   margin-bottom: 1rem;
   font-weight: lighter;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Work Sans";
 }
 
@@ -69,7 +69,6 @@
   align-items: center;
   flex-direction: column;
   margin-bottom: 0.5rem;
-  border: 1px solid rgb(158, 151, 151);
 }
 
 .container-mask .content .message input {
@@ -82,6 +81,7 @@
   color: white;
   font-size: 1rem;
   border: 1px solid rgb(158, 151, 151);
+  border-bottom: none;
 }
 
 .container-mask .content .message textarea {
@@ -140,7 +140,7 @@
 
 .container-mask .media {
   color: whitesmoke;
-  transform: skew(0, 7deg) translate(0, 2rem);
+  transform: skew(0, 7deg) translate(0, 4rem);
   width: 40%;
   display: flex;
   justify-content: center;
@@ -149,7 +149,7 @@
 }
 
 .social-media-links {
-  position: absolute;
+  position: fixed;
   bottom: 1rem;
   display: flex;
 }
@@ -164,7 +164,7 @@
   fill: black;
 }
 
-::placeholder{
+::placeholder {
   font-family: "Work Sans", sans-serif;
 }
 
@@ -175,7 +175,10 @@
   fill: black;
 }
 
-.social-media-link:nth-child(3) > a:nth-child(1) svg:nth-child(1) > rect:nth-child(1) {
+.social-media-link:nth-child(3)
+  > a:nth-child(1)
+  svg:nth-child(1)
+  > rect:nth-child(1) {
   fill: black;
 }
 
@@ -206,7 +209,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 670px) {
   .container-mask {
     width: 100%;
     flex-direction: column;
@@ -223,7 +226,7 @@
   .connect-with-us-content h1 {
     font-size: 2rem;
   }
-  .connect-with-us-content > div{
+  .connect-with-us-content > div {
     margin: 1rem 0;
   }
   .container-mask {
@@ -240,5 +243,8 @@
     width: 30px;
     height: 30px;
     margin: 0.5rem;
+  }
+  .connect-with-us-content > div {
+    width: 100%;
   }
 }
