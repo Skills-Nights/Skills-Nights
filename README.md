@@ -8,7 +8,7 @@
 <br />
 <div align="center">
    <a href="/" >
-   <img src="https://github.com/Skills-Nights/Skills-Nights/blob/main/client/public/favicon.png?raw=true" alt="Logo" width="300" height="200"/>
+   <img src="https://github.com/Skills-Nights/Skills-Nights/blob/main/client/public/favicon.png?raw=true" alt="Logo" width="300" height="300"/>
    </a>
 
   <h3 align="center">Skills Nights</h3>
@@ -16,7 +16,7 @@
   <p align="center">
     The Development Club of IIITN
     <br />
-    <a href="https://github.com/Skills-Nights/Skills-Nights"><strong>Visit Website »</strong></a>
+    <a href="https://skillsnights.netlify.app/"><strong>Visit Website »</strong></a>
   </p>
 </div>
 
@@ -43,4 +43,4 @@ This is a github repository for the official website of Skills Nights - The Deve
 [license-shield]: https://img.shields.io/github/license/Skills-Nights/Skills-Nights.svg?style=for-the-badge
 [license-url]: https://github.com/Skills-Nights/Skills-Nights/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]:https://www.linkedin.com/in/ace-iiitn-785041204/
+[linkedin-url]:https://www.linkedin.com/company/skills-nights/
