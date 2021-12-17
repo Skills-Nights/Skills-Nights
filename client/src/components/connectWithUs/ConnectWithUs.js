@@ -38,7 +38,7 @@ const ConnectWithUs = () => {
         url: "https://skills-nights.herokuapp.com/send",
       })
         .then((response) => {
-          console.log(response);
+          // console.log(response);
           setIsLoading(false);
           setIsSuccess(true);
         })

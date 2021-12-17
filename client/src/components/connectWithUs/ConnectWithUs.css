@@ -5,6 +5,7 @@
   min-height: 100vh;
   position: relative;
   overflow: hidden;
+  min-height: 750px;
 }
 
 .whiteBg {
@@ -24,6 +25,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  min-height: 750px;
 }
 
 .connect-with-us-content {
@@ -218,7 +220,8 @@
   }
   .container-mask .media {
     margin-left: 0;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
   .container-mask .media svg {
     max-height: 200px;
@@ -227,7 +230,7 @@
     font-size: 2rem;
   }
   .connect-with-us-content > div {
-    margin: 1rem 0;
+    margin: 0.8rem 0;
   }
   .container-mask {
     transform: skew(0, -15deg);
