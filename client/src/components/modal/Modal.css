@@ -32,12 +32,12 @@
   align-items: center;
   flex-direction: column;
   position: relative;
-  transform: scale(0);
-  transition: all 0.8s ease;
+  transform: scale3d(0,0,0);
+  transition: all 1s ease;
 }
 
 .modal-background.pop-up-smooth .modal-container {
-  transform: scale(1);
+  transform: scale3d(1,1,1);
 }
 
 .modal-details h2 {
@@ -68,7 +68,7 @@
   height: 30px;
   width: 30px;
   color: white;
-  transition: all 0.3s ease;
+  transition: all 1s ease;
 }
 
 .title-close-btn button:hover {
@@ -88,7 +88,7 @@
   min-width: 160px;
   height: 50px;
   border: 1px solid white;
-  transform: scale(0);
+  transform: scale(0.5);
   transition: all 1s ease-out;
   font-size: 1rem;
   cursor: pointer;

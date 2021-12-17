@@ -12,9 +12,6 @@ const OurTeam = () => {
   const management = teamData.filter((data) => data.team === "management");
   const video = teamData.filter((data) => data.team === "video");
 
-  console.log(developers);
-  console.log(heads);
-
   return (
     <div id="team" className="our-team-container">
       <div className="our-team-content">

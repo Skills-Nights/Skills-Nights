@@ -20,7 +20,7 @@ function Modal({ setModalOpen}) {
           {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
             voluptate tempore eveniet. Excepturi nesciunt laudantium dolore
             accusamus maxime quo iure ipsum com */}
-          Past Events !
+          Coming Soon !
         </h2>
       </div>
       <div className="modal-register-button">

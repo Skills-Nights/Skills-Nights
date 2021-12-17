@@ -63,7 +63,7 @@ const Archives = () => {
     try {
       const res = await fetch(webinars_url);
       let data = await res.json();
-      console.log(data)
+      // console.log(data)
       if (data.items) {
         setWebinarVideos(data.items);
         setWebinarsAreLoading(false);
@@ -150,6 +150,7 @@ const Archives = () => {
               recentVideos.map((video, index) => {
                 return (
                   <ReactPlayer
+                    controls={true}
                     height="300px"
                     width="315px"
                     key={index}
@@ -179,6 +180,7 @@ const Archives = () => {
               webinarVideos.map((video, index) => {
                 return (
                   <ReactPlayer
+                    controls={true}
                     height="300px"
                     width="315px"
                     key={index}
