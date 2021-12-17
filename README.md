@@ -7,9 +7,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-   <a href="/" >
+
    <img src="https://github.com/Skills-Nights/Skills-Nights/blob/main/client/public/favicon.png?raw=true" alt="Logo" width="300" height="300"/>
-   </a>
+  
 
   <h3 align="center">Skills Nights</h3>
 
