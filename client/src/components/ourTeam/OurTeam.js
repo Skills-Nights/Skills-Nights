@@ -5,6 +5,7 @@ import teamData from "./teamData";
 import Card from "./card/Card";
 
 const OurTeam = () => {
+  const founder = teamData.filter((data)=> data.team === "founder")
   const heads = teamData.filter((data) => data.team === "heads");
   const developers = teamData.filter((data) => data.team === "developers");
   const contentWriters = teamData.filter((data) => data.team === "content");
@@ -15,6 +16,16 @@ const OurTeam = () => {
   return (
     <div id="team" className="our-team-container">
       <div className="our-team-content">
+        <div data-aos="zoom-in" className="team">
+          <div className="team-heading">
+            <h1>Founder</h1>
+          </div>
+          <div className="team-members">
+            {founder.map((member) => {
+              return <Card key={member.id} {...member}></Card>;
+            })}
+          </div>
+        </div>
         <div data-aos="fade-up" className="team">
           <div className="team-heading">
             <h1>Heads</h1>

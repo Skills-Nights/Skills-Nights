@@ -54,6 +54,12 @@
 }
 
 
+@media screen and (min-width: 890px) {
+  .nav-logo{
+    margin-left: 4rem;
+  }
+}
+
 @media screen and (max-width: 890px) {
   .navbar-container{
     min-height: 60px;

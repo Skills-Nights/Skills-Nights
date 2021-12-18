@@ -184,7 +184,7 @@ export default [
     instagramLink: "https://instagram.com/drock_2001_",
     githubLink: "https://github.com/Drock2001",
     team: "management",
-    email: "#",
+    email: "kmrdivyansh@gmail.com",
   },
   {
     id: 17,
@@ -326,5 +326,16 @@ export default [
     githubLink: "https://github.com/ambujraj2001",
     team: "heads",
     email: "bt20cse054@iiitn.ac.in",
+  },
+  {
+    id: 16,
+    name: "Divyansh Kumar",
+    image: divyanshKumarImage,
+    linkedinLink:
+      "https://www.linkedin.com/in/divyansh-kumar-9a5856192/?originalSubdomain=in",
+    instagramLink: "https://instagram.com/drock_2001_",
+    githubLink: "https://github.com/Drock2001",
+    team: "founder",
+    email: "kmrdivyansh@gmail.com",
   },
 ];
