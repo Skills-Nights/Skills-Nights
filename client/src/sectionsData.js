@@ -1,28 +1,4 @@
-const sizeArray = ["200px", "130px", "300px", "150px", "180px"];
-// const marginLeftArray = ["1rem", "5rem", "10rem", "15rem", "20rem"];
-// const marginTopArray = ["1rem", "5rem", "10rem", "15rem", "20rem"];
-const animationArray = [
-  "fade-up",
-  "fade-in",
-  "fade-right",
-  "fade-left",
-  "fade-up-right",
-  "fade-down-right",
-  "flip-left",
-  "flip-right",
-  "slide-up",
-  "slide-down",
-  "slide-left",
-  "slide-right",
-  "zoom-in",
-  "zoom-in-up",
-  "zoom-in-left",
-  "zoom-in-right",
-  "zoom-out",
-  "zoom-out-up",
-  "zoom-out-left",
-  "zoom-out-right",
-];
+let x = window.matchMedia("(max-width: 650px)");
 
 export default [
   {
@@ -46,7 +22,7 @@ export default [
     hasVideo: true,
     isAbout: true,
     bubblesData: [],
-    contentAnim: "fade-up",
+    contentAnim: "fade-down",
   },
   {
     id: 2,
@@ -64,22 +40,24 @@ export default [
     sectionButtonStyle: "btn-black",
     sectionBg: "whiteBg",
     hasModal: true,
+    isEvent: true,
+    isReversed: true,
     bubblesData: [
       {
         size: "150px",
-        marginLeft: "30rem",
-        marginTop: "7rem",
+        marginLeft: "40rem",
+        marginTop: "3rem",
       },
       {
-        size: "130px",
-        marginLeft: "12rem",
-        marginTop: "12rem",
+        size: x.matches ? "90px" : "130px",
+        marginLeft: x.matches ? "14rem" : "12rem",
+        marginTop: x.matches ? "6rem" : "18rem",
       },
-      {
-        size: "100px",
-        marginLeft: "35rem",
-        marginTop: "0rem",
-      },
+      // {
+      //   size: "100px",
+      //   marginLeft: "38rem",
+      //   marginTop: "-2rem",
+      // },
     ],
     contentAnim: "fade-up",
   },
@@ -102,18 +80,18 @@ export default [
     bubblesData: [
       {
         size: "110px",
-        marginLeft: "20rem",
-        marginTop: "8rem",
+        marginLeft: "60rem",
+        marginTop: "3rem",
       },
+      // {
+      //   size: "150px",
+      //   marginLeft: "35rem",
+      //   marginTop: "10rem",
+      // },
       {
-        size: "150px",
-        marginLeft: "35rem",
-        marginTop: "10rem",
-      },
-      {
-        size: "180px",
-        marginLeft: "10rem",
-        marginTop: "0rem",
+        size: x.matches ? "100px" : "150px",
+        marginLeft: x.matches ? "13rem" : "5rem",
+        marginTop: x.matches ? "30rem" : "20rem",
       },
     ],
     contentAnim: "fade-up",
@@ -134,6 +112,7 @@ export default [
     sectionButtonName: "Core-Team Members",
     sectionButtonStyle: "btn-black",
     sectionBg: "whiteBg",
+    isReversed: true,
     isTeam: true,
     bubblesData: [
       {
@@ -141,15 +120,15 @@ export default [
         marginLeft: "20rem",
         marginTop: "8rem",
       },
-      {
-        size: "150px",
-        marginLeft: "35rem",
-        marginTop: "10rem",
-      },
+      // {
+      //   size: "150px",
+      //   marginLeft: "35rem",
+      //   marginTop: "10rem",
+      // },
       {
         size: "130px",
-        marginLeft: "10rem",
-        marginTop: "2rem",
+        marginLeft: "50rem",
+        marginTop: "20rem",
       },
     ],
     contentAnim: "fade-up",

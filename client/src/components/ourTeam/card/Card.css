@@ -32,8 +32,9 @@ a {
 
 .member-card-container.hovering .card-content img {
   border-radius: 50%;
-  border: 3px solid white;
+  /* border: 3px solid white; */
   transform: scale(1.2);
+  box-shadow: 0 0 0px 2.5px #fff;
 }
 
 .member-card-container.hovering .card-content {
@@ -98,7 +99,7 @@ a radialGradient {
   transform: translate(0%, -90%);
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:850px) {
  .member-card-container.hovering{
    margin: 3rem;
  }

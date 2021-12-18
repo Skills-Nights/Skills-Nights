@@ -57,7 +57,6 @@ const ConnectWithUs = () => {
   return (
     <div
       id="connect-with-us"
-      data-aos="fade-down"
       className="connect-with-us-container whiteBg"
     >
       <div className="container-mask">

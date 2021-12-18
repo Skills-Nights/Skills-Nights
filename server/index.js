@@ -18,8 +18,8 @@ app.get("/", (req, res) => {
 app.post("/send", async (req, res) => {
   console.log(req.body);
   const output = `<h1>New Message</h1>
-  <p>Sent by ${req.body.email}</p>
   <hr/>
+  <p>Sent by ${req.body.email}</p>
   <p> The message is as follows :</p>
   <b>${req.body.message}</b>
   <br/>

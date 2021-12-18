@@ -7,7 +7,10 @@ import { HashLink } from "react-router-hash-link";
 
 import Modal from "../modal/Modal";
 import Bubbles from "./bubbles/Bubbles";
-import bubble from "./bubbles/assets/bubble.png"
+import bubble from "./bubbles/assets/bubble.png";
+import { ReactComponent as EventsAndFunActivitesSvg } from "./assets/eventsAndFunActivities.svg";
+import { ReactComponent as OurTeamSvg } from "./assets/ourTeam.svg";
+import { ReactComponent as ArchivesSvg } from "./assets/archivesSvg.svg";
 
 import { useSpring, animated } from "react-spring";
 
@@ -23,13 +26,15 @@ const PageSection = (props) => {
     hasArchives,
     pageId,
     isTeam,
+    isEvent,
     isAbout,
     isArchives,
+    isReversed,
     bubblesData,
-    contentAnim
+    contentAnim,
   } = props;
   const [modalOpen, setModalOpen] = useState(false);
-  const [rotate, setRotate] = useState(false)
+  const [rotate, setRotate] = useState(false);
 
   const navigate = useNavigate();
 
@@ -48,8 +53,8 @@ const PageSection = (props) => {
   const styles = useSpring({
     transform: "scale(1)",
     delay: 2000,
-    config:{
-      duration:"800"
+    config: {
+      duration: "800",
     },
     from: {
       transform: "scale(0)",
@@ -58,7 +63,13 @@ const PageSection = (props) => {
 
   return (
     <div id={pageId} className="section-view">
-      <div className={`section-container ${sectionBg}`}>
+      <div
+        className={
+          isReversed
+            ? `section-container reversed ${sectionBg}`
+            : `section-container ${sectionBg}`
+        }
+      >
         {isAbout ? (
           <div className="sn-heading">
             <animated.div style={styles}>
@@ -100,6 +111,19 @@ const PageSection = (props) => {
             </div>
           </div>
         ) : null}
+        {isEvent ? (
+          <div data-aos="fade-left" className="left-container">
+            <EventsAndFunActivitesSvg></EventsAndFunActivitesSvg>
+          </div>
+        ) : isArchives ? (
+          <div data-aos="fade-right" className="left-container">
+            <ArchivesSvg></ArchivesSvg>
+          </div>
+        ) : isTeam ? (
+          <div data-aos="fade-right" className="left-container">
+            <OurTeamSvg></OurTeamSvg>
+          </div>
+        ) : null}
         <div data-aos={contentAnim} className="section-content">
           <div className="heading">
             <h1>{sectionHeading}</h1>
@@ -112,11 +136,13 @@ const PageSection = (props) => {
                   {sectionButtonName}
                 </Button>
               </HashLink>
-            ) : isArchives ? <HashLink smooth to="/archives#archives">
+            ) : isArchives ? (
+              <HashLink smooth to="/archives#archives">
                 <Button buttonStyle={`${sectionButtonStyle}`}>
                   {sectionButtonName}
                 </Button>
-              </HashLink> : (
+              </HashLink>
+            ) : (
               <Button
                 onClick={hasModal ? showModal : hasVideo ? showVideo : null}
                 buttonStyle={`${sectionButtonStyle}`}

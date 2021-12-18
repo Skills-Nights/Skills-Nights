@@ -9,7 +9,7 @@ const Card = (props) => {
   const [isHovering, setIsHovering] = useState(false);
   const { name, image, linkedinLink, instagramLink, githubLink, email } = props;
 
-  var x = window.matchMedia("(min-width: 850px)");
+  let x = window.matchMedia("(min-width: 850px)");
 
   useEffect(() => {
     if (!x.matches) {
